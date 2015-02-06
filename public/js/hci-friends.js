@@ -12,6 +12,12 @@ function initializePage() {
 	console.log("Javascript connected!");
 }
 
+$('.clicklistener').click(function(){
+	console.log($(this).text());
+	$(this).text(anagrammedName($(this).text()));
+
+});
+
 function anagrammedName(name) {
 	// Thanks, Internet Anagram Server!
 	
